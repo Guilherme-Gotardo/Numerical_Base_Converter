@@ -182,3 +182,39 @@ function subtrairBinario() {
     resultado_calculadora.innerHTML = `${somaBin}`
 
 }
+
+// Calculadora para octadecimal
+
+function somarOcta() {
+
+    var numero1 = numOcta_1.value
+    var numero2 = numOcta_2.value
+
+    let octaNumero1 = parseInt(numero1, 8)
+    let octaDec1 = octaNumero1.toString(10)
+
+    let octaNumero2 = parseInt(numero2, 8)
+    let octaDec2 = octaNumero2.toString(10)
+
+    let somaDec = parseInt(octaDec1, 10) + parseInt(octaDec2, 10)
+    let somaOcta = somaDec.toString(8)
+    resultado_calculadora.innerHTML = `${somaOcta}`
+
+}
+
+function subtrairOcta() {
+
+    var numero1 = numOcta_1.value
+    var numero2 = numOcta_2.value
+
+    let octaNumero1 = parseInt(numero1, 8)
+    let octaDec1 = octaNumero1.toString(10)
+
+    let octaNumero2 = parseInt(numero2, 8)
+    let octaDec2 = octaNumero2.toString(10)
+
+    let somaDec = parseInt(octaDec1, 10) - parseInt(octaDec2, 10)
+    let subOcta = somaDec.toString(8)
+    resultado_calculadora.innerHTML = `${subOcta}`
+
+}
