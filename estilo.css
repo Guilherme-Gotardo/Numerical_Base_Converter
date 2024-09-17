@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilização de todo o menu inicial da barra de navegação */ 
+* {
+  font-family: "Bitter", serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#cabecalho{
+    background-color: #63b1bc;
+    padding-bottom: 1px;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 10px;
+}
+
+.menu{
+    color: white;
+    text-decoration: none;
+}
+
+#entrada_decimal, #entrada_binario{
+    font-size: 110%;
+    width: 40%;
+    border-radius: 10px;
+}
+
+#secao1{
+    display: grid;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#secaoConversao{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-color: #1f2a44;
+    margin-right: 2%;
+    border-radius: 10px;
+}
+
+#secaoContato{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    background-color: #1f2a44;
+    border-radius: 10px;
+}
+
+#resultado{
+    color: white;
+}
+
+.git{
+    color: white;
+    text-decoration: none;
+}
