@@ -5,52 +5,63 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Convertendo | Base hexadecimal</title>
         <script src="script.js" defer></script>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     
 <center>
 
-    <h1>Marise's Machine Conversor!</h1>
-    <header>
+    <header id="cabecalho">
+        <h1>Marise's Machine Conversor!</h1>
         <nav>
             <ul>
-                <a a="" href="decimal.html">Decimal</a>
-                <a href="binario.html">Binario</a>
-                <a href="octadecimal.html">Octadecimal</a>
-                <a>Hexadecimal</a>
+                <a class="menu" a="" href="decimal.html">Decimal</a>
+                <a class="menu" href="binario.html">Binario</a>
+                <a class="menu" href="octadecimal.html">Octadecimal</a>
+                <a class="menu" style="border-bottom: 2px solid #1f2a44;">Hexadecimal</a>
             </ul>
         </nav>
     </header>
-    
-    <p>Convertendo valores em decimal</p>
-    <input type="text" id="entrada_hexadecimal" placeholder="Digite o valor em hexadecimal">
-    
-    <br><br>
-    
-    <button onclick="hexadecimalParaDecimal()">Converter para decimal</button>
-    
-    <button onclick="hexadecimalParaBinario()">Converter para binário</button>
-    
-    <button onclick="hexadecimalParaOctadecimal()">Converter para octadecimal</button>
-    
-    <br><br>
-    
-    <div id="resultado"></div>
-    
-    <h2>Calculadora!</h2>
-    
-    <p>Digite o primeiro número: </p>
-    <input type="text" id="numero_1">
-    
-    <p>Digite o segundo número:</p>
-    <input type="text" id="numero_2">
-    
-    <button onclick="somar()">Somar</button>
-    
-    <button onclick="subtrair()">Subtrair</button>
+    <br>
+    <div id="secao1">
+        <div id="secaoConversao">
+            <h3 class="textoBranco">Convertendo valores em decimal</h3>
+            <input type="text" id="entrada_hexadecimal" placeholder="Digite o valor em hexadecimal">
+            
+            <br><br>
+            
+            <button onclick="hexadecimalParaDecimal()">Converter para decimal</button>
+            
+            <button onclick="hexadecimalParaBinario()">Converter para binário</button>
+            
+            <button onclick="hexadecimalParaOctadecimal()">Converter para octadecimal</button>
+            
+            <br><br>
+            
+            <div id="resultado"></div>        
+        </div>
+        <div id="secaoContato">
+            <h3 class="textoBranco">Contato</h3>
+            <a class="git" href="https://github.com/FabioHKC">Fabio</a><br>
+            <a class="git" href="https://github.com/Guilherme-Gotardo">Guilherme Gotardo</a>
+        </div>
+    </div>
 
-    <div id="resultado_calculadora"></div>
+    <div id="secao2">
+        <h2 class="textoBranco">Calculadora!</h2>
+    
+        <p class="textoBranco">Digite o primeiro número: </p>
+        <input type="text" id="numero_1">
+        
+        <p class="textoBranco">Digite o segundo número:</p>
+        <input type="text" id="numero_2">
+        
+        <button onclick="somar()">Somar</button>
+        
+        <button onclick="subtrair()">Subtrair</button>
+    
+        <div id="resultado_calculadora"></div>
+    </div>
     
 </center>
     

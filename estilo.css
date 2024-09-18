@@ -23,7 +23,10 @@ body{
     text-decoration: none;
 }
 
-#entrada_decimal, #entrada_binario{
+#entrada_decimal, #entrada_binario, 
+#entrada_octadecimal, #entrada_hexadecimal,
+#numero_1, #numero_2, #numOcta_1, #numOcta_2,
+#numBin_1, #numBin_2{
     font-size: 110%;
     width: 40%;
     border-radius: 10px;
@@ -54,7 +57,14 @@ body{
     border-radius: 10px;
 }
 
-#resultado{
+#secao2{
+    background-color: #1f2a44;
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#resultado, .textoBranco, #resultado_calculadora{
     color: white;
 }
 
