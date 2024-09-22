@@ -1,69 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Convertendo | Base octadecimal</title>
-        <script src="script.js" defer></script>
-        <link rel="stylesheet" href="estilo.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertendo | Base octadecimal</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
-    
-<center>
 
-    <header id="cabecalho">
-        <h1>Marise's Machine Conversor!</h1>
-        <nav>
-            <ul>
-                <a class="menu" a="" href="decimal.html">Decimal</a>
-                <a class="menu" href="binario.html">Binario</a>
-                <a class="menu" style="border-bottom: 2px solid #1f2a44;">Octadecimal</a>
-                <a class="menu" href="hexadecimal.html">Hexadecimal</a>
-            </ul>
-        </nav>
-    </header>
-    <br>
-    <div id="secao1">
-        <div id="secaoConversao">
-            <h3 class="textoBranco">Convertendo valores em octadecimal</h3>
-            <input type="number" id="entrada_octadecimal" placeholder="Digite o valor em octadecimal">
-            
-            <br><br>
-            
-            <button onclick="octadecimalParaDecimal()">Converter para decimal</button>
-            
-            <button onclick="octadecimalParaBinario()">Converter para binário</button>
-            
-            <button onclick="octadecimalParaHexadecimal()">Converter para hexadecimal</button>
-            
-            <br><br>
-            
-            <div id="resultado"></div>
+    <center>
+
+        <header id="cabecalho">
+            <h1 class="flex-item">Marise's Machine Conversor!</h1>
+            <nav>
+                <ul class="lista-menu">
+                    <a class="menu" href="decimal.html">Decimal</a>
+                    <a class="menu" href="binario.html">Binario</a>
+                    <a class="menu" style="cursor: pointer;">Octadecimal</a>
+                    <a class="menu" href="hexadecimal.html">Hexadecimal</a>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <div id="secao1">
+            <div id="secaoConversao">
+                <h3 class="textoBranco">Convertendo valores em octadecimal</h3>
+                <input type="number" id="entrada_octadecimal" placeholder="Digite o valor em octadecimal">
+
+                <br><br>
+
+                <button onclick="octadecimalParaDecimal()">Para decimal</button>
+
+                <button onclick="octadecimalParaBinario()">Para binário</button>
+
+                <button onclick="octadecimalParaHexadecimal()">Para hexadecimal</button>
+
+                <br><br>
+
+                <div id="resultado"></div>
+            </div>
+            <div id="secaoContato">
+                <h3 class="textoBranco">Contato</h3>
+                <a class="git" href="https://github.com/FabioHKC">Fabio</a><br>
+                <a class="git" href="https://github.com/Guilherme-Gotardo">Guilherme Gotardo</a>
+            </div>
         </div>
-        <div id="secaoContato">
-            <h3 class="textoBranco">Contato</h3>
-            <a class="git" href="https://github.com/FabioHKC">Fabio</a><br>
-            <a class="git" href="https://github.com/Guilherme-Gotardo">Guilherme Gotardo</a>
+
+        <div id="secao2">
+
+            <div class="secao2-interna">
+                <h2 class="textoBranco">Calculadora!</h2>
+                <p class="textoBranco">Digite o primeiro número: </p>
+                <input type="text" id="numOcta_1">
+                <p class="textoBranco">Digite o segundo número:</p>
+                <input type="text" id="numOcta_2">
+                <button onclick="somarOcta()">Somar</button>
+                <button onclick="subtrairOcta()">Subtrair</button>
+                <br><br>
+                <div class="resultado" style="font-size: larger;">Resultado:<div id="resultado_calculadora"></div></div>
+
+            </div>
+
         </div>
-    </div>
 
-    <div id="secao2">
-        <h2 class="textoBranco">Calculadora!</h2>
+    </center>
 
-        <p class="textoBranco">Digite o primeiro número: </p>
-        <input type="text" id="numOcta_1">
-    
-        <p class="textoBranco">Digite o segundo número:</p>
-        <input type="text" id="numOcta_2">
-    
-        <button onclick="somarOcta()">Somar</button>
-    
-        <button onclick="subtrairOcta()">Subtrair</button>
-    
-        <div id="resultado_calculadora"></div>
-    </div>
+    <ul class = "squares"></ul>
 
-</center>
-    
 </body>
+
 </html>

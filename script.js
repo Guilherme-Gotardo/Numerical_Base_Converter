@@ -218,3 +218,28 @@ function subtrairOcta() {
     resultado_calculadora.innerHTML = `${subOcta}`
 
 }
+
+/*Animação dos quadrados*/
+
+const quadrados = document.querySelector('ul.squares')
+
+for (var numero = 0; numero <= 10; numero += 1) {       //Quantidade de quadrados 
+    const li = document.createElement('li')
+
+    const random = (min, max) => Math.random () * (max - min) + min
+
+    const size = Math.floor(random(10 ,120))  //randomizar o tamanho dos quadrados
+    const position = random(1, 99)
+    const delay = random(5, 0.1) 
+    const duration = random(12, 6)
+
+    li.style.width = `${size}px`
+    li.style.height = `${size}px`
+    li.style.bottom = `-${size}px`
+    li.style.left = `${position}%`
+    li.style.animationDelay = `${delay}s`
+    li.style.animationDuration = `${duration}s`
+
+    quadrados.appendChild(li)
+
+}

@@ -1,68 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Convertendo | Base binaria</title>
-        <script src="script.js" defer></script>
-        <link rel="stylesheet" href="estilo.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertendo | Base binaria</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
-    
-<center>
-    <header id="cabecalho">
-        <h1>Marise's Machine Conversor!</h1>
-        <nav>
-            <ul>
-                <a class="menu" a="" href="decimal.html">Decimal</a>
-                <a class="menu" style="border-bottom: 2px solid #1f2a44;">Binario</a>
-                <a class="menu" href="octadecimal.html">Octadecimal</a>
-                <a class="menu" href="hexadecimal.html">Hexadecimal</a>
-            </ul>
-        </nav>
-    </header>
-    <br>
-    <div id="secao1">
-        <div id="secaoConversao">
-            <h3 class="textoBranco">Convertendo valores em binario</h3>
-            <input type="number" id="entrada_binario" placeholder="Digite o valor em binario">
-            
-            <br><br>
-            
-            <button onclick="binarioParaDecimal()">Converter para decimal</button>
-            
-            <button onclick="binarioParaOctadecimal()">Converter para octadecimal</button>
-            
-            <button onclick="binarioParaHexadecimal()">Converter para hexadecimal</button>
-            
-            <br><br>
-            
-            <div id="resultado"></div>
-        </div>
-        <div id="secaoContato">
-            <h3 class="textoBranco">Contato</h3>
-            <a class="git" href="https://github.com/FabioHKC">Fabio</a><br>
-            <a class="git" href="https://github.com/Guilherme-Gotardo">Guilherme Gotardo</a>
-        </div>
-    </div>
 
-    <div id="secao2">
-        <h2 class="textoBranco">Calculadora!</h2>
+    <center>
 
-        <p class="textoBranco">Digite o primeiro número: </p>
-        <input type="text" id="numBin_1">
+
+        <header id="cabecalho">
+            <h1 class="flex-item">Marise's Machine Conversor!</h1>
+            <nav>
+                <ul class="lista-menu">
+                    <a class="menu" href="decimal.html">Decimal</a>
+                    <a class="menu" style="cursor: pointer;">Binario</a>
+                    <a class="menu" href="octadecimal.html">Octadecimal</a>
+                    <a class="menu" href="hexadecimal.html">Hexadecimal</a>
+                </ul>
+            </nav>
+        </header>
+        <br>
+
     
-        <p class="textoBranco">Digite o segundo número:</p>
-        <input type="text" id="numBin_2">
-    
-        <button onclick="somarBinario()">Somar</button>
-    
-        <button onclick="subtrairBinario()">Subtrair</button>
-    
-        <div id="resultado_calculadora"></div>
-    </div>
-    
-</center>
-    
+            <div id="secao1">
+                <div id="secaoConversao">
+                    <h3 class="textoBranco">Convertendo valores em binario</h3>
+                    <input type="number" id="entrada_binario" placeholder="Digite o valor em binario">
+                    <br><br>
+                    <button onclick="binarioParaDecimal()">Para decimal</button>
+                    <button onclick="binarioParaOctadecimal()">Para octadecimal</button>
+                    <button onclick="binarioParaHexadecimal()">Para hexadecimal</button>
+                    <br><br>
+                    <div id="resultado"></div>
+                </div>
+                <div id="secaoContato">
+                    <h3 class="textoBranco">Contato</h3>
+                    <a class="git" href="https://github.com/FabioHKC">Fabio</a><br>
+                    <a class="git" href="https://github.com/Guilherme-Gotardo">Guilherme Gotardo</a>
+                </div>
+            </div>
+
+
+            <div id="secao2">
+
+                <div class="secao2-interna">
+                    <h2 class="textoBranco">Calculadora!</h2>
+                    <p class="textoBranco">Digite o primeiro número: </p>
+                    <input type="text" id="numBin_1">
+                    <p class="textoBranco">Digite o segundo número:</p>
+                    <input type="text" id="numBin_2">
+                    <button onclick="somarBinario()">Somar</button>
+                    <button onclick="subtrairBinario()">Subtrair</button>
+                    <br><br>
+                    <div class="resultado" style="font-size: larger;">Resultado:<div id="resultado_calculadora"></div></div>
+                </div>
+                
+            </div>
+       
+
+    </center>
+
+    <ul class = "squares"></ul>
+
 </body>
+
 </html>
