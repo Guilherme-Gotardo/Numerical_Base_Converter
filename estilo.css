@@ -8,9 +8,13 @@
 body{
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    padding: 25px 5%;
-    margin: -10px;
+    padding: 1% 5%;
+}
+
+.flex-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #cabecalho{
@@ -21,16 +25,16 @@ body{
     border-radius: 10px;
     padding: 0.25%;
     color: #ED145B;
-    width: 1200px;
 }
 
-.lista-menu {
+.lista-menu{
     display: flex;
     justify-content: center;
     gap: 5%;
 }
 
-#cabecalho .lista-menu a {
+.lista-menu a {
+    display: flex;
     justify-content: center;
     gap: 5%;
     font-weight: bold;
@@ -59,9 +63,9 @@ body{
 
 #secao1{
     display: grid;
-    margin-left: 2%;
-    margin-right: 2%;
-    width: 1200px;
+    grid-template-columns: 70% 30%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #secaoConversao{
@@ -70,9 +74,8 @@ body{
     grid-column-start: 1;
     grid-column-end: 1;
     background-color: #1f2a44;
-    margin-right: 15px;
+    margin-right: 2%;
     border-radius: 10px;
-    width: 785px;
 }
 
 #secaoContato{
@@ -82,23 +85,20 @@ body{
     grid-column-end: 2;
     background-color: #1f2a44;
     border-radius: 10px;
-    width: 400px;
 }
 
 #secao2{
     display: flex;
-    align-items: start;
     justify-content: center;
-    margin: 15px 0 0;
+    margin-top: 1%;
     background-color: #1f2a44;
     border-radius: 10px;
-    width: 600px;
-    height: 275px;
+    width: 50%;
+    height: 80%;
     gap: 10px;
-    padding: 0 0 15px 0;
 }
 
-#secao2 .secao2-interna {
+.secao2-interna {
     align-items: center;
     color:#ED145B;
     font-weight: bold;
@@ -107,7 +107,6 @@ body{
 #resultado, .textoBranco, #resultado_calculadora{
     color: #EFB661;
     font-size: 20px;
-    word-wrap: break-word
 }
 
 .git{
@@ -117,14 +116,10 @@ body{
 
 button {
     align-items: center;
-    position: relative;
     justify-content: center;
     border-radius: 10px;
     height: 40px;
     margin: 1%;
-    cursor: pointer;
-    border: none;
-    transition: background-color 0.3s ease;
     font-weight: bold;
     background-color:white;
     color: #1f2a44;
@@ -145,8 +140,7 @@ input {
     height: 40px;   
     background-color: rgba(37, 254, 243, 0.549);
     display: block;
-    position: absolute;
-    bottom: -40px;
+    position: fixed;
     animation: up 2s infinite;
     animation-direction: alternate;
     z-index: -1;
