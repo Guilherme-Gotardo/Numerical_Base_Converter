@@ -123,6 +123,7 @@ button {
     font-weight: bold;
     background-color:white;
     color: #1f2a44;
+    cursor: pointer;
 }
 
 button:hover {
